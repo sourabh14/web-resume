@@ -1,0 +1,51 @@
+.latest-release-playlist {
+	display: flex;
+	height: 100px;
+	width: 270px;
+	border: 0.5px solid black;
+	margin: 22px 18px 22px 4px;
+	/*background-color: #20122c;*/
+	position: relative;
+}
+
+#dropdown {
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	float: right;
+}
+
+#dropdown-menu {
+	height:0px;
+	width: 0px;
+	margin: 0px;
+	padding: 0px;
+	background-color: var(--font_color_1);
+	font-family: sans-serif;
+	color: #4b5c5e;
+    font-weight: 400;
+	position: relative;
+	z-index: 1;
+	padding: 1rem;
+	display: none;
+}
+
+#dropdown-list {
+    display: none;
+	margin-bottom: 1rem;
+}
+
+#dropdown-list a {
+	text-decoration: none;
+	color : #4b5c5e;
+}
+
+#dropdown:hover #dropdown-menu {
+	height:150px;
+    width: 200px;
+	display: block;
+}
+
+#dropdown:hover #dropdown-list {
+	display: block;
+}
